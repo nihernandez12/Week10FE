@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DragonFly Inn</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container bg-success-subtle">
+    <br>
+    <!--This is the title of the website-->
+    <h1 class="text-center text">The DragonFly Inn</h1>
+     <img
+        src="https://i.pinimg.com/originals/30/27/3d/30273d70812357cfc5b96b7818a57e6a.jpg "
+        class="img-fluid"
+        alt="Dragonfly Inn Sign"
+        width="2000"
+        />
+        </h1>
+    <!--This is the start of the form/table for the user to fill in-->
+    <div class="card border-success">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-checkin-date">Check-In Date</label>
+                        <input type="date" class="form-control" id="new-checkin-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-checkout-date">Check-Out Date</label>
+                        <input type="date" class="form-control" id="new-checkout-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-name">Name</label>
+                        <input type="text" class="form-control" id="new-name" placeholder="Name">
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-name">Special Requests</label>
+                        <input type="text" class="form-control" id="new-specialrequest" placeholder="Special Requests">
+                    </div>
+                </div>
+            </div><br>
+            <div>
+                <button id="add" class="btn btn-success fromm-control">Create</button>
+           </div>
+        </div>
+    </div>
+    <!--This is the table that once the user submits the form, it will populate too.-->
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Name</th>
+            <th>Date Created</th>
+            <th>Check-In Date</th>
+            <th>Check-Out Date</th>
+            <th>Special Requests</th>
+            <th>Cancel Reservations</th>
+        </tr>
+    </table>
+
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
